@@ -1,6 +1,7 @@
 formatPrice(number) {
+    //number needs to be in the following 2 decemal format: 10000.00
     var numberString = number.toString();
-    var loc = number.toString().length - 1; //getting position of decimal seperator id it is changed after adding 0
+    var loc = number.toString().length - 1; 
     print (loc);
     var newNum = numberString.substr(loc, 3);
     // Logic to add thousands seperator after every 3 digits
